@@ -4,7 +4,7 @@ from PyQt4.QtWebKit import *
 
 import sys
 
-class InspectForms(QApplication):
+class RenderTreeDump(QApplication):
 
 
     def __init__(self, argv):
@@ -23,7 +23,7 @@ if __name__ == "__main__":
         print "Usage: %s URL" % sys.argv[0]
         sys.exit(1)
     try:
-        app = InspectForms(sys.argv)
+        app = RenderTreeDump(sys.argv)
         sys.exit(app.exec_())
     except KeyboardInterrupt:
         sys.exit(app.quit())
